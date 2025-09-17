@@ -1,4 +1,4 @@
-motd: "&6&lFanBuild &f&l❱ &7Nos créations, votre imagination !"
+motd: "&6&lMOTD"
 
 spawn:
   world: ""
@@ -7,3 +7,4 @@ spawn:
   z: 0.0
   yaw: 0.0
   pitch: 0.0
+
