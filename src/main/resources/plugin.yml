@@ -1,0 +1,62 @@
+name: FoxEssentials
+main: fr.dreyfox.foxessentials.FoxEssentials
+version: 1.0.0
+authors: ["DreyFox"]
+commands:
+  setspawn:
+    description: Définir le spawn du serveur
+    usage: /setspawn
+    permission: fox.setspawn
+  spawn:
+    description: Se téléporter au spawn
+    usage: /spawn
+  day:
+    description: Met le jour dans le monde
+    usage: /day
+    permission: fox.day
+  night:
+    description: Met la nuit dans le monde
+    usage: /night
+    permission: fox.night
+  connexion:
+    description: Gérer la whitelist (on/off/add/remove)
+    usage: /connexion <on|off|add|remove> [pseudo]
+    permission: fox.connexion
+  creatif:
+    description: Mettre son mode de jeu en Créatif
+    usage: /creatif
+    permission: fox.creatif
+  spec:
+    description: Mettre son mode de jeu en Spectateur
+    usage: /spec
+    permission: fox.spec
+  tp:
+    description: TP vers un joueur, ou TP un joueur vers un autre
+    usage: "/tp <joueur> [autreJoueur]"
+    permission: fox.tp
+permissions:
+  fox.admin:
+    description: Accès administrateur FoxEssentials
+    default: op
+    children:
+      fox.setspawn: true
+      fox.day: true
+      fox.night: true
+      fox.connexion: true
+      fox.creatif: true
+      fox.spec: true
+      fox.tp: true
+  fox.setspawn:
+    default: op
+  fox.day:
+    default: op
+  fox.night:
+    default: op
+  fox.connexion:
+    default: op
+  fox.creatif:
+    default: false
+  fox.spec:
+    default: false
+  fox.tp:
+    default: op
