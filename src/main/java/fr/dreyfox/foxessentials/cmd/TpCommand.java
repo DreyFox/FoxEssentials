@@ -33,7 +33,6 @@ public class TpCommand implements CommandExecutor, TabCompleter {
             return true;
         }
 
-        // /tp joueurA joueurB  -> téléporte A vers B
         Player a = Bukkit.getPlayerExact(args[0]);
         Player b = Bukkit.getPlayerExact(args[1]);
         if (a == null || b == null) { sender.sendMessage("§cErreur: Joueur introuvable."); return true; }
@@ -50,4 +49,5 @@ public class TpCommand implements CommandExecutor, TabCompleter {
         if (args.length == 2) return names;
         return Collections.emptyList();
     }
+
 }
